@@ -1,0 +1,23 @@
+takuyaaoyanagi@TakuyaMBA git_challenge % cd /Users/takuyaaoyanagi/Desktop/TEST/git_challenge
+takuyaaoyanagi@TakuyaMBA git_challenge % git init
+Initialized empty Git repository in /Users/takuyaaoyanagi/Desktop/TEST/git_challenge/.git/
+takuyaaoyanagi@TakuyaMBA git_challenge % echo Hello, world >> hello_world.txt
+takuyaaoyanagi@TakuyaMBA git_challenge % git add hello_world.txt
+takuyaaoyanagi@TakuyaMBA git_challenge % cat hello_world.txt
+Hello, world
+takuyaaoyanagi@TakuyaMBA git_challenge % git commit -m "hello_world.txtを追加"
+[main (root-commit) cce17bf] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+takuyaaoyanagi@TakuyaMBA git_challenge % echo こんにちは、世界! >> hello_world.txt
+takuyaaoyanagi@TakuyaMBA git_challenge % git add hello_world.txt
+takuyaaoyanagi@TakuyaMBA git_challenge % cat hello_world.txt
+Hello, world
+こんにちは、世界!
+takuyaaoyanagi@TakuyaMBA git_challenge % git commit -m "日本語訳を追記"
+[main 44ccae3] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+takuyaaoyanagi@TakuyaMBA git_challenge % git log --oneline
+44ccae3 (HEAD -> main) 日本語訳を追記
+cce17bf hello_world.txtを追加
+takuyaaoyanagi@TakuyaMBA git_challenge % 
